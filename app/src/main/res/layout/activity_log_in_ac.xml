@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logIn_ac"
+    android:background="@drawable/mi_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+<LinearLayout
+    android:id="@+id/firstL_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+
+    >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_TextInputLayout"
+        android:orientation="vertical"
+        android:hint="Phone"
+
+        android:layout_marginTop="80dp"
+        >
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/username_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text="3438204823048"
+            android:textColor="@android:color/white" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_TextInputLayout"
+        android:orientation="vertical"
+        android:hint="Password"
+
+        >
+
+
+        <android.support.v7.widget.AppCompatEditText
+
+            android:id="@+id/password_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text="12345"
+            android:textColor="@android:color/white" />
+
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="@android:color/white"
+        ></CheckBox>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstL_layout"
+        >
+
+
+        <android.support.v7.widget.AppCompatButton
+
+
+            android:id="@+id/sign_inbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorSignIn"
+            android:text="Sign In"
+
+            android:textColor="@android:color/white" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

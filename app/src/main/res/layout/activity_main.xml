@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mi_bg">
+
+
+
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/linear_layout"
+    >
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+
+        android:src="@drawable/logo_eat_it"
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/text_slogan"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login_"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_two"
+            android:text="Log In" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signup_"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selecter"
+            android:shadowColor="@android:color/black"
+            android:text="Sign UP" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
